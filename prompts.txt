@@ -1,0 +1,4 @@
+Prompt0001:
+Give code for a UI of a food recipe search website. The landing page has simple textbox where the user keys in search strings. The textbox has type-ahead functionality. To the right of the textbox is a button "Ki Khaawaan!" which when pressed invokes the backend api to search the ingredients, recipe and other details for the food name user is searching for.
+
+Prompt0002:
