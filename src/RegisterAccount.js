@@ -31,24 +31,24 @@ function RegisterAccount({ onClose }) {
 
     return (
         <Box position="fixed" top="0" left="0" width="100%" height="100%" bg="rgba(0, 0, 0, 0.5)" display="flex" alignItems="center" justifyContent="center" style={{ opacity, transition: 'opacity 0.5s' }}>
-            <Box bg="white" p={8} borderRadius="md" boxShadow="lg" position="relative" width="50%" height="100%" display="flex" alignItems="center" justifyContent="center">
-                <VStack spacing={4}>
-                    <Button onClick={() => handleSignUp('google')} colorScheme="red" size="lg" bg="white" color="black" borderRadius="full" width="250px" border="1px solid lightgrey">
-                        <HStack>
+            <Box bg="white" p={8} borderRadius="md" boxShadow="lg" position="relative" width="60%" height="100%" display="flex" alignItems="center" justifyContent="center">
+                <VStack spacing={8}>
+                    <Button onClick={() => handleSignUp('google')} colorScheme="red" size="lg" bg="white" color="black" borderRadius="full" width="350px" border="1px solid lightgrey">
+                        <HStack justifyContent="space-between" width="100%">
                             <Image src="/path/to/google-logo.png" alt="Google" boxSize="20px" />
-                            <span>Sign up with Google</span>
+                            <span style={{ flex: 1, textAlign: 'center' }}>Sign up with Google</span>
                         </HStack>
                     </Button>
-                    <Button onClick={() => handleSignUp('facebook')} colorScheme="blue" size="lg" bg="white" color="black" borderRadius="full" width="250px" border="1px solid lightgrey">
-                        <HStack>
+                    <Button onClick={() => handleSignUp('facebook')} colorScheme="blue" size="lg" bg="white" color="black" borderRadius="full" width="350px" border="1px solid lightgrey">
+                        <HStack justifyContent="space-between" width="100%">
                             <Image src="/path/to/facebook-logo.png" alt="Meta" boxSize="20px" />
-                            <span>Sign up with Meta</span>
+                            <span style={{ flex: 1, textAlign: 'center' }}>Sign up with Meta</span>
                         </HStack>
                     </Button>
-                    <Button onClick={() => handleSignUp('linkedin')} colorScheme="blue" size="lg" bg="white" color="black" borderRadius="full" width="250px" border="1px solid lightgrey">
-                        <HStack>
+                    <Button onClick={() => handleSignUp('linkedin')} colorScheme="blue" size="lg" bg="white" color="black" borderRadius="full" width="350px" border="1px solid lightgrey">
+                        <HStack justifyContent="space-between" width="100%">
                             <Image src="/path/to/linkedin-logo.png" alt="LinkedIn" boxSize="20px" />
-                            <span>Sign up with LinkedIn</span>
+                            <span style={{ flex: 1, textAlign: 'center' }}>Sign up with LinkedIn</span>
                         </HStack>
                     </Button>
                     <Link onClick={onClose} color="teal.500" cursor="pointer">
